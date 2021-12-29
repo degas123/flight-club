@@ -1,7 +1,8 @@
 import smtplib
 
 class NotificationManager:
-
+my_email = "jtt666664@gmail.com"
+password =${{ secrets.PASSWORD }}
 
 
     def send_emails(self, emails, message, google_flight_link):
