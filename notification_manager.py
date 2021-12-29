@@ -3,7 +3,7 @@ import smtplib
 class NotificationManager:
 my_email = "jtt666664@gmail.com"
 password =${{ secrets.PASSWORD }}
-
+USERS_ENDPOINT= ${{secrets.USERS_ENDPOINT }}
 
     def send_emails(self, emails, message, google_flight_link):
         with smtplib.SMTP("smtp.gmail.com") as connection:
